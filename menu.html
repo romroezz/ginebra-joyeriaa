@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ginebra</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+background-color: #f8efe6;
+color: #000000;
+font-family: 'Georgia', serif;
+margin: 0;
+}
+h1 {
+color: goldenrod;
+text-align: center;
+margin: 30px 0;
+}
+header {
+background-color: #f4c2c2;
+padding: 15px 0;
+border-bottom: 3px solid goldenrod;
+text-align: center;
+}
+header ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+header ul li {
+display: inline-block;
+margin: 0 15px;
+}
+header ul li a {
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+header ul li a:hover {
+color: goldenrod;
+}
+.items {
+max-width: 900px;
+margin: auto;
+}
+.product {
+margin-bottom: 40px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="Index.html">Home</a></li>
+<li><a href="pedidos.html">Pedidos</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<div class="container">
+<h1>Menú</h1>
+<div class="items">
+<div class="product">
+<h2>Anillo Aurora</h2>
+<p>Plata, talla 6</p>
+<p>Diseño minimalista con circonia central</p>
+<p>$480 MXN</p>
+</div>
+<div class="product">
+<h2>Collar Luna Nueva</h2>
+<p>Dorado, 45 cm</p>
+<p>Cadena fina con dije de media luna</p>
+<p>$620 MXN</p>
+</div>
+<div class="product">
+<h2>Pulsera Cielo Rosa</h2>
+<p>Rose gold, ajustable</p>
+<p>Cuentas metálicas con estrella</p>
+<p>$350 MXN</p>
+</div>
+<div class="product">
+<h2>Aretes Estrella Boreal</h2>
+<p>Plata, 1.5 cm</p>
+<p>Microcristales con brillo sutil</p>
+<p>$290 MXN</p>
+</div>
+<div class="product">
+<h2>Anillo Esmeralda</h2>
+<p>Dorado, talla 7</p>
+<p>Piedra verde estilo urbano</p>
+<p>$540 MXN</p>
+</div>
+</div>
+<div id="menuCarousel" class="carousel slide mt-5" data-bs-ride="carousel" style="max-width:900px;margin:auto;">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="Anillo.jpg" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="Collar_Luna.jpg" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="pulsera_rosegold.jpg" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="Aretes_de_plata.jpg" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="anillo_esmeralda.jpg" class="d-block w-100">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

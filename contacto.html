@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ginebra</title>
+<link rel="stylesheet" href="styles.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+  background-color: #f8efe6;
+  color: #000;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+h1 {
+  color: goldenrod;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 30px;
+}
+header {
+  background-color: #f4c2c2;
+  padding: 15px 0;
+  border-bottom: 3px solid goldenrod;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+header ul li a:hover {
+  color: goldenrod;
+}
+.contact-box {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff8f2;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid goldenrod;
+  text-align: center;
+}
+.btn-ginebra {
+  border-color: #c77a7a;
+  color: #c77a7a;
+}
+.btn-ginebra:hover {
+  background-color: #c77a7a;
+  color: white;
+}
+.info {
+  margin-top: 15px;
+  font-size: 1.1em;
+  display: none;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="Index.html">Home</a></li>
+<li><a href="pedidos.html">Pedidos</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<h1>Contacto</h1>
+<div class="container">
+<div class="contact-box">
+<button class="btn btn-outline-danger btn-ginebra" onclick="mostrar('tel')">Teléfono</button>
+<div id="tel" class="info">55 1234 5678</div>
+<button class="btn btn-outline-danger btn-ginebra mt-3" onclick="mostrar('correo')">Correo</button>
+<div id="correo" class="info">contacto@ginebra.com</div>
+<button class="btn btn-outline-danger btn-ginebra mt-3" onclick="mostrar('dir')">Dirección</button>
+<div id="dir" class="info">CDMX, México</div>
+</div>
+</div>
+<script>
+function mostrar(id) {
+  var elemento = document.getElementById(id);
+  elemento.style.display = elemento.style.display === "block" ? "none" : "block";
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
